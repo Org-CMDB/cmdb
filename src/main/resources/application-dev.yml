@@ -7,7 +7,7 @@ spring:
       password: admin123
     slave:
       driver-class-name: com.mysql.cj.jdbc.Driver
-      jdbcUrl: jdbc:mysql://172.20.88.92:3306/yundisk?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=GMT&useAffectedRows=true
+      jdbcUrl: jdbc:mysql://172.20.88.72:3306/yundisk?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=GMT&useAffectedRows=true
       username: root
       password: 123456
 
