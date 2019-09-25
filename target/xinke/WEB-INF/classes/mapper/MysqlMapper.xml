@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dfe.plateform.mapper.MysqlMapper">
+    <select id="getFileUuidOfFileExtra" resultType="string">
+        select file_uuid from file_extra where deleted_at &lt; CURRENT_DATE - 7
+    </select>
+    
+    <delete id="deleteFileExtra">
+        delete from file_extra where deleted_at &lt; CURRENT_DATE - 7
+    </delete>
+
+    <delete id="deleteFilePaths">
+        delete from file_paths where deleted_at &lt; CURRENT_DATE - 7
+    </delete>
+</mapper>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dfe.plateform.mapper.MysqlMapper">
+    <select id="getFileUuidOfFileExtra" resultType="string">
+        select file_uuid from file_extra where deleted_at &lt; CURRENT_DATE - 7
+    </select>
+
+    <select id="getPathIdOfFIlePaths" resultType="string">
+        select concat(f_selectDirectory(a.user_id,a.path_id), a.path_id) from file_paths a where deleted_at &lt; current_date - 7
+    </select>
+
+    <select id="getFileUuidByPath" resultType="string" parameterType="java.util.Set">
+        select file_uuid from file_extra where file_path in
+        <foreach collection="collection" item="id" open="(" separator="," close=")">
+            #{id,jdbcType=INTEGER}
+        </foreach>
+        and is_completed = '1'
+    </select>
+
+    <delete id="deleteFileExtra">
+        delete from file_extra where deleted_at &lt; CURRENT_DATE - 7
+    </delete>
+
+    <delete id="deleteFileExtraByPath" parameterType="java.util.Set">
+        delete from file_extra where file_path in
+        <foreach collection="collection" item="id" open="(" separator="," close=")">
+            #{id,jdbcType=INTEGER}
+        </foreach>
+    </delete>
+
+    <delete id="deleteFilePaths" parameterType="java.util.Set">
+        delete from file_paths where path_id in
+        <foreach collection="collection" item="id" open="(" separator="," close=")">
+            #{id,jdbcType=INTEGER}
+        </foreach>
+    </delete>
+</mapper>

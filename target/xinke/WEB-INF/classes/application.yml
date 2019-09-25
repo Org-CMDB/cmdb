@@ -1,0 +1,10 @@
+
+cron:
+  deleteFiles: 0 0 2 * * ?
+
+deletefiles:
+  path: /dangchat/files/file_
+
+spring:
+  profiles:
+    active: dev

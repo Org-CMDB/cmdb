@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    master:
+      driver-class-name: org.postgresql.Driver
+      jdbcUrl: jdbc:postgresql://172.20.88.158:5601/im
+      username: admin
+      password: admin123
+    slave:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbcUrl: jdbc:mysql://172.20.88.72:3306/yundisk?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&serverTimezone=GMT&useAffectedRows=true
+      username: root
+      password: 123456
+
+mybatis:
+  type-aliases-package: com.dfe.plateform.entity
+  mapper-locations: classpath:/mapper/*.xml
+
+server:
+  port: 8080
+  servlet:
+    context-path: /dfsync_deletefiles_quartz

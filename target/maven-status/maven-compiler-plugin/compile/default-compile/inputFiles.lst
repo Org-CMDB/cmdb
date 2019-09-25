@@ -1,0 +1,16 @@
+E:\协同\50开发管理\deleteFilesQuartz\src\main\java\com\dfe\plateform\datasource\DynamicRoutingDataSource.java
+E:\协同\50开发管理\deleteFilesQuartz\src\main\java\com\dfe\plateform\mapper\PgSqlMapper.java
+E:\协同\50开发管理\deleteFilesQuartz\src\main\java\com\dfe\plateform\exception\GlobalExceptionHandler.java
+E:\协同\50开发管理\deleteFilesQuartz\src\main\java\com\dfe\plateform\mapper\MysqlMapper.java
+E:\协同\50开发管理\deleteFilesQuartz\src\main\java\com\dfe\plateform\config\WebSecurityConfig.java
+E:\协同\50开发管理\deleteFilesQuartz\src\main\java\com\dfe\plateform\datasource\DataSourceConfigurer.java
+E:\协同\50开发管理\deleteFilesQuartz\src\main\java\com\dfe\plateform\datasource\DynamicDataSourceAspect.java
+E:\协同\50开发管理\deleteFilesQuartz\src\main\java\com\dfe\plateform\service\DeleteFileService.java
+E:\协同\50开发管理\deleteFilesQuartz\src\main\java\com\dfe\plateform\datasource\TargetDataSource.java
+E:\协同\50开发管理\deleteFilesQuartz\src\main\java\com\dfe\plateform\schedule\Schedule.java
+E:\协同\50开发管理\deleteFilesQuartz\src\main\java\com\dfe\plateform\datasource\DynamicDataSourceContextHolder.java
+E:\协同\50开发管理\deleteFilesQuartz\src\main\java\com\dfe\plateform\util\FileUtil.java
+E:\协同\50开发管理\deleteFilesQuartz\src\main\java\com\dfe\plateform\datasource\SlaveDataSource.java
+E:\协同\50开发管理\deleteFilesQuartz\src\main\java\com\dfe\plateform\service\DeleteFileServiceImpl.java
+E:\协同\50开发管理\deleteFilesQuartz\src\main\java\com\dfe\plateform\MyApplication.java
+E:\协同\50开发管理\deleteFilesQuartz\src\main\java\com\dfe\plateform\datasource\MasterDataSource.java

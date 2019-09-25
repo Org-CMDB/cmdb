@@ -1,0 +1,17 @@
+com\dfe\plateform\exception\GlobalExceptionHandler.class
+com\dfe\plateform\MyApplication.class
+com\dfe\plateform\datasource\MasterDataSource.class
+com\dfe\plateform\datasource\TargetDataSource.class
+com\dfe\plateform\mapper\MysqlMapper.class
+com\dfe\plateform\datasource\SlaveDataSource.class
+com\dfe\plateform\datasource\DataSourceConfigurer.class
+com\dfe\plateform\mapper\PgSqlMapper.class
+com\dfe\plateform\datasource\DynamicDataSourceAspect.class
+com\dfe\plateform\config\WebSecurityConfig.class
+com\dfe\plateform\datasource\DynamicRoutingDataSource.class
+com\dfe\plateform\service\DeleteFileService.class
+com\dfe\plateform\datasource\DynamicDataSourceContextHolder.class
+com\dfe\plateform\util\FileUtil.class
+com\dfe\plateform\datasource\DynamicDataSourceContextHolder$1.class
+com\dfe\plateform\schedule\Schedule.class
+com\dfe\plateform\service\DeleteFileServiceImpl.class

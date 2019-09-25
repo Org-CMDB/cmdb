@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dfe.plateform.mapper.PgSqlMapper">
+    <select id="getFileIdOfDeleteFiles" resultType="string">
+        select * from get_sync_delete_files
+    </select>
+    
+    <delete id="deleteChatOrCloudFiles" parameterType="java.util.List">
+        delete from files where id in
+        <foreach collection="list" index="index" item="id" open="("
+                 separator="," close=")">
+            #{id,jdbcType=BIGINT}::BIGINT
+        </foreach>
+        or download_id in
+        <foreach collection="list" index="index" item="download_id" open="("
+                 separator="," close=")">
+            #{download_id,jdbcType=VARCHAR}::VARCHAR
+        </foreach>
+    </delete>
+
+    <update id="updateFilesIsDeleted" parameterType="java.util.List">
+        update files set is_deleted = true
+        <where>
+            id in
+            <foreach collection="list" index="index" item="id" open="("
+                     separator="," close=")">
+                #{id,jdbcType=VARCHAR}::BIGINT
+            </foreach>
+        </where>
+    </update>
+
+    <update id="updateFilesDeletedAt" parameterType="java.util.List">
+        update files set deleted_at = now()::timestamp(0)without time zone
+        <where>
+            id in
+            <foreach collection="list" index="index" item="id" open="("
+                     separator="," close=")">
+                #{id,jdbcType=VARCHAR}::BIGINT
+            </foreach>
+        </where>
+    </update>
+    
+    <select id="getFileIdOfDeleteFilesCloud" resultType="string">
+        select * from get_cloud_delete_files
+    </select>
+</mapper>
