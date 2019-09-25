@@ -1,0 +1,6 @@
+2019-09-25 09:49:43.505 INFO  --- [StartupInfoLogger.java:50][restartedMain] - Starting MyApplication on DEEP-1804171815 with PID 9996 (E:\gittry\deleteFilesQuartz\target\classes started by Administrator in E:\gittry\deleteFilesQuartz)
+2019-09-25 09:49:43.520 INFO  --- [SpringApplication.java:679][restartedMain] - The following profiles are active: dev
+2019-09-25 09:49:47.955 INFO  --- [StartupInfoLogger.java:59][restartedMain] - Started MyApplication in 5.085 seconds (JVM running for 8.658)
+2019-09-25 09:50:51.867 INFO  --- [StartupInfoLogger.java:50][restartedMain] - Starting MyApplication on DEEP-1804171815 with PID 9996 (E:\gittry\deleteFilesQuartz\target\classes started by Administrator in E:\gittry\deleteFilesQuartz)
+2019-09-25 09:50:51.867 INFO  --- [SpringApplication.java:679][restartedMain] - The following profiles are active: dev
+2019-09-25 09:50:52.618 INFO  --- [StartupInfoLogger.java:59][restartedMain] - Started MyApplication in 0.785 seconds (JVM running for 73.322)

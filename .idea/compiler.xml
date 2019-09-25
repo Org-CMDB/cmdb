@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dfsync_deletefiles_quartz" />
         <module name="plateform" />
         <module name="xinke" />
       </profile>
@@ -13,6 +14,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="dfsync_deletefiles_quartz" options="-parameters" />
       <module name="plateform" options="-parameters" />
       <module name="xinke" options="-parameters" />
     </option>
